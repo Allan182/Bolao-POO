@@ -1,6 +1,4 @@
 import { Aposta } from './Aposta';
-import { Apostador } from './Apostador';
-import { Equipe } from './Equipe';
 import { Partida } from './Partida';
 
 
@@ -70,6 +68,7 @@ export class Bolao {
         }
     }
 
+    
 
     public toString(): string {
         return ` Data Inicial: ${this.dataInicio} \n Apostas: ${this.vetApostas}`;
