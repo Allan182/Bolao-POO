@@ -4,6 +4,7 @@ import { Partida } from './Partida';
 
 export class Aposta {
 
+    
     private _apostador: Apostador;
     private _valor: number;
     private _partida: Partida;
