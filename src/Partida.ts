@@ -2,6 +2,7 @@ import { Equipe } from "./Equipe";
 
 export class Partida {
 
+    
     private _dataPartida: string;
     private _equipeUm: Equipe;
     private _equipeDois: Equipe;
