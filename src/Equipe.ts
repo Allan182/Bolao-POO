@@ -2,6 +2,7 @@ import { Jogador } from './Jogador';
 
 export class Equipe {
 
+    
     private _nome: string;
     private _local: string;
     private _vetJogadores: Jogador[];
