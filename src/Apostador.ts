@@ -4,6 +4,7 @@ import { Equipe } from "./Equipe";
 import { Partida } from "./Partida";
 import { Pessoa } from "./Pessoa";
 
+
 export class Apostador extends Pessoa {
 
     constructor(nome: string, cpf: string) {
