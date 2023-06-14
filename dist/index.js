@@ -1,0 +1,23 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Apostador_1 = require("./Apostador");
+const Equipe_1 = require("./Equipe");
+const Bolao_1 = require("./Bolao");
+const Partida_1 = require("./Partida");
+const Jogador_1 = require("./Jogador");
+const jogadorUm = new Jogador_1.Jogador("Allan Furlani", "132.681.077-45");
+const jogadorDois = new Jogador_1.Jogador("Arnaldo Sakomani", "122.221.327-32");
+const jogadorTres = new Jogador_1.Jogador("Rennan Merlo", "245.412.032-25");
+const jogadorQuatro = new Jogador_1.Jogador("Merlin", "113.321.987-12");
+const equipeUm = new Equipe_1.Equipe("Equipe Tenis de Mesa", "Santa Teresa", [jogadorUm, jogadorDois]);
+const equipeDois = new Equipe_1.Equipe("Equipe Boliche", "Santa Maria", [jogadorTres, jogadorQuatro]);
+const apostadorUm = new Apostador_1.Apostador("Apostador Brick", "111.222.333-45");
+const apostadorDois = new Apostador_1.Apostador("Apostador Another", "321.123.323-95");
+const bolao = new Bolao_1.Bolao("20/05/2002", []);
+const partidaUm = new Partida_1.Partida("10/05/2004", equipeUm, equipeDois);
+const partidaDois = new Partida_1.Partida("20/07/2010", equipeUm, equipeDois);
+(apostadorUm.apostar(bolao, partidaUm, equipeUm, 250));
+(apostadorDois.apostar(bolao, partidaDois, equipeUm, 500));
+bolao.conferirResultado(partidaUm, 3, 2);
+//console.log(equipeUm);
+//# sourceMappingURL=index.js.map
